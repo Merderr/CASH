@@ -33,9 +33,18 @@ class SignUpVC: UIViewController {
             print("We are good go to feedback")
         }
         else
-        {
+        { if password1.text != password2.text {
+            
+        
             password1.text = ""
             password2.text = ""
+            
+            let alert = UIAlertController(title: "We are Sorry", message: "Your password entries did not Match.", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Okay?", style: .default , handler: {(action)->Void in print("Ok button tapped")})
+            alert.addAction(ok)
+            self.present(alert, animated:true,completion: nil)
+            
+        }
         }
         //link to feedback page
     }
