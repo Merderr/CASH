@@ -21,6 +21,8 @@
 		D09964F127C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
 		D09964F227C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
 		D09964F327C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
+		D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099665A27CAB433004DCBEA /* SignInVC.swift */; };
+		D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099665E27CAB486004DCBEA /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,10 @@
 		D09964D927C9801B004DCBEA /* CASHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CASHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09964DD27C9801B004DCBEA /* CASHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASHUITests.swift; sourceTree = "<group>"; };
 		D09964DF27C9801B004DCBEA /* CASHUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASHUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D09964EC27C9804E004DCBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D09964EC27C9804E004DCBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CASHUITests/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D09964F027C9805D004DCBEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D099665A27CAB433004DCBEA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = CASHUITests/SignInVC.swift; sourceTree = SOURCE_ROOT; };
+		D099665E27CAB486004DCBEA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +109,15 @@
 		D09964B827C9801A004DCBEA /* CASH */ = {
 			isa = PBXGroup;
 			children = (
+				D099665A27CAB433004DCBEA /* SignInVC.swift */,
 				D09964B927C9801A004DCBEA /* AppDelegate.swift */,
+				D099665E27CAB486004DCBEA /* SignUpVC.swift */,
 				D09964BB27C9801A004DCBEA /* SceneDelegate.swift */,
 				D09964BD27C9801A004DCBEA /* ViewController.swift */,
 				D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */,
 				D09964CA27C9801B004DCBEA /* Info.plist */,
+				D09964F027C9805D004DCBEA /* Main.storyboard */,
+				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
 			);
 			path = CASH;
@@ -128,8 +136,6 @@
 			children = (
 				D09964DD27C9801B004DCBEA /* CASHUITests.swift */,
 				D09964DF27C9801B004DCBEA /* CASHUITestsLaunchTests.swift */,
-				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
-				D09964F027C9805D004DCBEA /* Main.storyboard */,
 			);
 			path = CASHUITests;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 				D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */,
 				D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */,
 				D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */,
+				D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */,
+				D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
