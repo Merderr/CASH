@@ -6,15 +6,27 @@
 //
 
 import UIKit
+import WebKit
 
-class SignInVC: UIViewController {
 
+class SignInVC: UIViewController ,WKUIDelegate {
+
+    @IBOutlet weak var webV: UIWebView!
+  
     @IBOutlet var password: UITextField!
     @IBOutlet var email: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        let html = "<html><body><marquee scrollamount = 13, style='color:rgb(35,255,45);font-family:Sign Painter;font-weight:bold; font-size:300%        '> Special Savings for our Preferred Guests!!..........We Value your opinion as one of our Clients... </marquee></body></html>"
+        webV.loadHTMLString(html, baseURL: nil)
+       // webView.loadHTMLString(html, baseURL: nil)
+        
+        
+        
     }
     
     @IBAction func goToSignUp(_ sender: UIButton) {

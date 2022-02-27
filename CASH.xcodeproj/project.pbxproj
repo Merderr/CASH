@@ -23,6 +23,7 @@
 		D09964F327C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
 		D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099665A27CAB433004DCBEA /* SignInVC.swift */; };
 		D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099665E27CAB486004DCBEA /* SignUpVC.swift */; };
+		D099666127CACBDF004DCBEA /* marque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099666027CACBDF004DCBEA /* marque.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D09964F027C9805D004DCBEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D099665A27CAB433004DCBEA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = CASHUITests/SignInVC.swift; sourceTree = SOURCE_ROOT; };
 		D099665E27CAB486004DCBEA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D099666027CACBDF004DCBEA /* marque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marque.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */,
 				D09964CA27C9801B004DCBEA /* Info.plist */,
 				D09964F027C9805D004DCBEA /* Main.storyboard */,
+				D099666027CACBDF004DCBEA /* marque.swift */,
 				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
 			);
@@ -281,6 +284,7 @@
 				D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */,
 				D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */,
 				D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */,
+				D099666127CACBDF004DCBEA /* marque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
