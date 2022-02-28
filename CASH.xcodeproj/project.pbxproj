@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8403034B27CCF6AE008732F9 /* gymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403034A27CCF6AE008732F9 /* gymViewController.swift */; };
+		8403034D27CCF6D6008732F9 /* diningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403034C27CCF6D6008732F9 /* diningViewController.swift */; };
+		8403034F27CCF6F2008732F9 /* bedroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403034E27CCF6F2008732F9 /* bedroomViewController.swift */; };
+		8403035127CCF706008732F9 /* spaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403035027CCF706008732F9 /* spaViewController.swift */; };
+		8403035327CCF730008732F9 /* scubaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403035227CCF730008732F9 /* scubaViewController.swift */; };
+		8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */; };
 		D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964B927C9801A004DCBEA /* AppDelegate.swift */; };
 		D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BB27C9801A004DCBEA /* SceneDelegate.swift */; };
 		D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BD27C9801A004DCBEA /* ViewController.swift */; };
@@ -44,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8403034A27CCF6AE008732F9 /* gymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gymViewController.swift; sourceTree = "<group>"; };
+		8403034C27CCF6D6008732F9 /* diningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diningViewController.swift; sourceTree = "<group>"; };
+		8403034E27CCF6F2008732F9 /* bedroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bedroomViewController.swift; sourceTree = "<group>"; };
+		8403035027CCF706008732F9 /* spaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaViewController.swift; sourceTree = "<group>"; };
+		8403035227CCF730008732F9 /* scubaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scubaViewController.swift; sourceTree = "<group>"; };
+		8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCollectionViewCell.swift; sourceTree = "<group>"; };
 		D09964B627C9801A004DCBEA /* CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09964B927C9801A004DCBEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09964BB27C9801A004DCBEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +131,12 @@
 				D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */,
 				D09964CA27C9801B004DCBEA /* Info.plist */,
 				D09964F027C9805D004DCBEA /* Main.storyboard */,
+				8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */,
+				8403035227CCF730008732F9 /* scubaViewController.swift */,
+				8403035027CCF706008732F9 /* spaViewController.swift */,
+				8403034E27CCF6F2008732F9 /* bedroomViewController.swift */,
+				8403034C27CCF6D6008732F9 /* diningViewController.swift */,
+				8403034A27CCF6AE008732F9 /* gymViewController.swift */,
 				D099666027CACBDF004DCBEA /* marque.swift */,
 				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
@@ -279,11 +297,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09964C427C9801A004DCBEA /* CASH.xcdatamodeld in Sources */,
+				8403035327CCF730008732F9 /* scubaViewController.swift in Sources */,
+				8403034F27CCF6F2008732F9 /* bedroomViewController.swift in Sources */,
+				8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */,
 				D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */,
 				D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */,
 				D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */,
+				8403035127CCF706008732F9 /* spaViewController.swift in Sources */,
 				D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */,
 				D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */,
+				8403034B27CCF6AE008732F9 /* gymViewController.swift in Sources */,
+				8403034D27CCF6D6008732F9 /* diningViewController.swift in Sources */,
 				D099666127CACBDF004DCBEA /* marque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
