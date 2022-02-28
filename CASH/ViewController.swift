@@ -25,6 +25,5 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view.
     }
 
-
 }
 
