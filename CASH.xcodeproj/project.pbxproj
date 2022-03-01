@@ -154,13 +154,13 @@
 				8403034A27CCF6AE008732F9 /* gymVC.swift */,
 				D099666027CACBDF004DCBEA /* marque.swift */,
 				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
-				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
 				AC522F9227CE5350001010F1 /* ScubaInstructorsRating.swift */,
 				AC522F9427CE54FC001010F1 /* ScubaEquipmentRating.swift */,
 				AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */,
 				AC522F9827CE5B7B001010F1 /* FoodRating.swift */,
 				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 				AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */,
+				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
 			);
 			path = CASH;
 			sourceTree = "<group>";
