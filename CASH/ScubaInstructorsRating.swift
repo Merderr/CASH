@@ -9,8 +9,8 @@ import UIKit
 
 class ScubaInstructorsRating: UIControl {
 
-    let imgFilledStar = UIImage(systemName: "star.fill")
-    let imgEmptyStar = UIImage(systemName: "star")
+    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(.systemRed)
+    let imgEmptyStar = UIImage(systemName: "star")?.withTintColor(.systemRed)
     
     var rating = 0
     var totalStars = 5
@@ -26,7 +26,7 @@ class ScubaInstructorsRating: UIControl {
     override func draw(_ rect: CGRect) {
         
         let context = UIGraphicsGetCurrentContext()
-        context!.setFillColor(UIColor.systemBackground.cgColor)
+        context!.setFillColor(UIColor.systemOrange.cgColor)
         context!.fill(rect)
         let availWidth = rect.size.width
         let cellWidth = availWidth / CGFloat(totalStars)
