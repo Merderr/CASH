@@ -14,6 +14,11 @@
 		8403035327CCF730008732F9 /* scubaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403035227CCF730008732F9 /* scubaVC.swift */; };
 		8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */; };
 		84E1215327CDD38700A3A11A /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1215227CDD38700A3A11A /* feedbackVC.swift */; };
+		AC522F9327CE5350001010F1 /* ScubaInstructorsRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9227CE5350001010F1 /* ScubaInstructorsRating.swift */; };
+		AC522F9527CE54FC001010F1 /* ScubaEquipmentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9427CE54FC001010F1 /* ScubaEquipmentRating.swift */; };
+		AC522F9727CE5A6D001010F1 /* DiningStaffRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */; };
+		AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9827CE5B7B001010F1 /* FoodRating.swift */; };
+		AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */; };
 		D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964B927C9801A004DCBEA /* AppDelegate.swift */; };
 		D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BB27C9801A004DCBEA /* SceneDelegate.swift */; };
 		D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BD27C9801A004DCBEA /* ViewController.swift */; };
@@ -58,6 +63,11 @@
 		8403035227CCF730008732F9 /* scubaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scubaVC.swift; sourceTree = "<group>"; };
 		8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCollectionViewCell.swift; sourceTree = "<group>"; };
 		84E1215227CDD38700A3A11A /* feedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
+		AC522F9227CE5350001010F1 /* ScubaInstructorsRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScubaInstructorsRating.swift; sourceTree = "<group>"; };
+		AC522F9427CE54FC001010F1 /* ScubaEquipmentRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScubaEquipmentRating.swift; sourceTree = "<group>"; };
+		AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningStaffRating.swift; sourceTree = "<group>"; };
+		AC522F9827CE5B7B001010F1 /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
+		AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningRoomRating.swift; sourceTree = "<group>"; };
 		D09964B627C9801A004DCBEA /* CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09964B927C9801A004DCBEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09964BB27C9801A004DCBEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +153,11 @@
 				D099666027CACBDF004DCBEA /* marque.swift */,
 				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
+				AC522F9227CE5350001010F1 /* ScubaInstructorsRating.swift */,
+				AC522F9427CE54FC001010F1 /* ScubaEquipmentRating.swift */,
+				AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */,
+				AC522F9827CE5B7B001010F1 /* FoodRating.swift */,
+				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 			);
 			path = CASH;
 			sourceTree = "<group>";
@@ -299,19 +314,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC522F9527CE54FC001010F1 /* ScubaEquipmentRating.swift in Sources */,
 				D09964C427C9801A004DCBEA /* CASH.xcdatamodeld in Sources */,
+				AC522F9727CE5A6D001010F1 /* DiningStaffRating.swift in Sources */,
 				8403035327CCF730008732F9 /* scubaVC.swift in Sources */,
 				8403034F27CCF6F2008732F9 /* bedroomVC.swift in Sources */,
 				84E1215327CDD38700A3A11A /* feedbackVC.swift in Sources */,
 				8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */,
 				D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */,
+				AC522F9327CE5350001010F1 /* ScubaInstructorsRating.swift in Sources */,
 				D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */,
+				AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */,
 				D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */,
 				8403035127CCF706008732F9 /* spaVC.swift in Sources */,
 				D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */,
 				D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */,
 				8403034B27CCF6AE008732F9 /* gymVC.swift in Sources */,
 				8403034D27CCF6D6008732F9 /* diningVC.swift in Sources */,
+				AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */,
 				D099666127CACBDF004DCBEA /* marque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
