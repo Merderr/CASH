@@ -26,7 +26,7 @@ class ScubaEquipmentRating: UIControl {
     override func draw(_ rect: CGRect) {
         
         let context = UIGraphicsGetCurrentContext()
-        context!.setFillColor(UIColor.systemBackground.cgColor)
+        context!.setFillColor(UIColor.systemCyan.cgColor)
         context!.fill(rect)
         let availWidth = rect.size.width
         let cellWidth = availWidth / CGFloat(totalStars)
