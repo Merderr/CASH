@@ -9,5 +9,10 @@ import UIKit
 
 class customCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var lb: UILabel!
+    
+    public func configure(with image: UIImage) {
+        img.image = image
+    }
 }
