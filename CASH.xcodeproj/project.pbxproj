@@ -19,6 +19,7 @@
 		AC522F9727CE5A6D001010F1 /* DiningStaffRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */; };
 		AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9827CE5B7B001010F1 /* FoodRating.swift */; };
 		AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */; };
+		AC522F9D27CE5EDB001010F1 /* JustForShowRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */; };
 		D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964B927C9801A004DCBEA /* AppDelegate.swift */; };
 		D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BB27C9801A004DCBEA /* SceneDelegate.swift */; };
 		D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BD27C9801A004DCBEA /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningStaffRating.swift; sourceTree = "<group>"; };
 		AC522F9827CE5B7B001010F1 /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
 		AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningRoomRating.swift; sourceTree = "<group>"; };
+		AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustForShowRatings.swift; sourceTree = "<group>"; };
 		D09964B627C9801A004DCBEA /* CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09964B927C9801A004DCBEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09964BB27C9801A004DCBEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */,
 				AC522F9827CE5B7B001010F1 /* FoodRating.swift */,
 				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
+				AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */,
 			);
 			path = CASH;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC522F9527CE54FC001010F1 /* ScubaEquipmentRating.swift in Sources */,
+				AC522F9D27CE5EDB001010F1 /* JustForShowRatings.swift in Sources */,
 				D09964C427C9801A004DCBEA /* CASH.xcdatamodeld in Sources */,
 				AC522F9727CE5A6D001010F1 /* DiningStaffRating.swift in Sources */,
 				8403035327CCF730008732F9 /* scubaVC.swift in Sources */,
