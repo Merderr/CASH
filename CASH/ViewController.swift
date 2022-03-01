@@ -22,6 +22,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.lb.text = textdata[indexPath.row]
         return cell
     }
+
+    
+
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch (indexPath.row) {
