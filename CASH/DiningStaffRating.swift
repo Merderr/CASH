@@ -10,7 +10,8 @@ import UIKit
 class DiningStaffRating: UIControl {
     
     let imgFilledStar = UIImage(systemName: "star.fill")
-    let imgEmptyStar = UIImage(systemName: "star")
+    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
+    
     
     var rating = 0
     var totalStars = 5
