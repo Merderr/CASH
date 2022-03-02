@@ -442,6 +442,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5e-6o-RaU">
                                                     <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" systemColor="labelColor"/>
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
@@ -816,7 +817,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KrL-AI-L1M"/>
+        <segue reference="FpZ-26-7lk"/>
         <segue reference="6YH-M3-YKU"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -829,6 +830,9 @@
         <image name="FC6DB2F5-A67C-4D06-AEA6-9B392C5FE01A" width="1182" height="887"/>
         <image name="colombo-maldivas" width="1140" height="800"/>
         <image name="jewels-of-the-indian-ocean-maldives-colombo-500x500" width="500" height="375"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
