@@ -25,13 +25,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 0:
             cell.configure(with: UIImage(named: "img0")!)
         case 1:
-            cell.configure(with: UIImage(named: "img0")!)
+            cell.configure(with: UIImage(named: "img1")!)
         case 2:
-            cell.configure(with: UIImage(named: "img0")!)
+            cell.configure(with: UIImage(named: "img2")!)
         case 3:
             cell.configure(with: UIImage(named: "img3")!)
         case 4:
-            cell.configure(with: UIImage(named: "img0")!)
+            cell.configure(with: UIImage(named: "img4")!)
         default:
             print("Image not found")
         }
