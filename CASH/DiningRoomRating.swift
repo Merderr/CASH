@@ -9,8 +9,8 @@ import UIKit
 
 class DiningRoomRating: UIControl {
     
-    let imgFilledStar = UIImage(systemName: "star.fill")
-    let imgEmptyStar = UIImage(systemName: "star")
+    var imgFilledStar = UIImage(systemName: "star.fill")
+    var imgEmptyStar = UIImage(systemName: "star")
     
     var rating = 0
     var totalStars = 5
@@ -26,7 +26,8 @@ class DiningRoomRating: UIControl {
     override func draw(_ rect: CGRect) {
         
         let context = UIGraphicsGetCurrentContext()
-        context!.setFillColor(UIColor.systemBackground.cgColor)
+    //    context!.setFillColor(UIColor.systemBackground.cgColor)
+        context!.setFillColor(red: 0.9, green: 0.1 , blue: 0.2, alpha: 1.0)
         context!.fill(rect)
         let availWidth = rect.size.width
         let cellWidth = availWidth / CGFloat(totalStars)
@@ -63,12 +64,17 @@ private extension DiningRoomRating{
     
     func drawStar(with frame: CGRect, highlighted: Bool){
         
+      
+        imgFilledStar = imgFilledStar?.withTintColor(UIColor.yellow)
+        imgEmptyStar = imgEmptyStar?.withTintColor(UIColor.gray)
         let image = highlighted ? imgFilledStar : imgEmptyStar
         draw(with: image!, and: frame)
+        
     }
     
     func draw(with image:UIImage, and frame:CGRect){
         image.draw(in: frame)
+        
     }
     // Handle the event listener.
     func handle(with touch: UITouch){

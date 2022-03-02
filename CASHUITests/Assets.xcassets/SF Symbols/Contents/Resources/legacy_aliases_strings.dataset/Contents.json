@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "legacy_aliases_strings.txt",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

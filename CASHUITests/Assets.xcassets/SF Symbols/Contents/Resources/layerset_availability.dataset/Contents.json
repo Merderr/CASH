@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "layerset_availability.plist",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

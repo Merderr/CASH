@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "MainMenu.strings",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
