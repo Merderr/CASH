@@ -58,7 +58,7 @@ class JustForShowRatings: UIControl {
         return true
     }
     
-
+// 
 }
 
 private extension JustForShowRatings{
