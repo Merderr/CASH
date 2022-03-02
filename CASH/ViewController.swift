@@ -8,7 +8,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var textdata = ["Hotel Suite","Dining Room", "Gym", "Spa Services","Scuba Diving","Overall"]
-    var imgdata = ["img","img","img","img","img"]
+    var imgdata = ["img0","img1","img2","img3","img4"]
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -21,7 +21,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! customCollectionViewCell
         cell.lb.text = textdata[indexPath.row]
-        cell.configure(with: UIImage(named: "img")!)
+        switch (indexPath.row){
+        case 0:
+            cell.configure(with: UIImage(named: "img0")!)
+        case 1:
+            cell.configure(with: UIImage(named: "img0")!)
+        case 2:
+            cell.configure(with: UIImage(named: "img0")!)
+        case 3:
+            cell.configure(with: UIImage(named: "img3")!)
+        case 4:
+            cell.configure(with: UIImage(named: "img0")!)
+        default:
+            print("Image not found")
+        }
+
         return cell
     }
     
