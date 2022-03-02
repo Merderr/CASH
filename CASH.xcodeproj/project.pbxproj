@@ -20,6 +20,8 @@
 		AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9827CE5B7B001010F1 /* FoodRating.swift */; };
 		AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */; };
 		AC522F9D27CE5EDB001010F1 /* JustForShowRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */; };
+		D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */; };
+		D07286F227CFDF600053744B /* ClientsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */; };
 		D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964B927C9801A004DCBEA /* AppDelegate.swift */; };
 		D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BB27C9801A004DCBEA /* SceneDelegate.swift */; };
 		D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BD27C9801A004DCBEA /* ViewController.swift */; };
@@ -70,6 +72,8 @@
 		AC522F9827CE5B7B001010F1 /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
 		AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningRoomRating.swift; sourceTree = "<group>"; };
 		AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustForShowRatings.swift; sourceTree = "<group>"; };
+		D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D09964B627C9801A004DCBEA /* CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09964B927C9801A004DCBEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09964BB27C9801A004DCBEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		D09964AD27C9801A004DCBEA = {
 			isa = PBXGroup;
 			children = (
+				D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */,
+				D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */,
 				D09964B827C9801A004DCBEA /* CASH */,
 				D09964D227C9801B004DCBEA /* CASHTests */,
 				D09964DC27C9801B004DCBEA /* CASHUITests */,
@@ -327,6 +333,7 @@
 				8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */,
 				D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */,
 				AC522F9327CE5350001010F1 /* ScubaInstructorsRating.swift in Sources */,
+				D07286F227CFDF600053744B /* ClientsData+CoreDataProperties.swift in Sources */,
 				D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */,
 				AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */,
 				D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */,
@@ -334,6 +341,7 @@
 				D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */,
 				D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */,
 				8403034B27CCF6AE008732F9 /* gymVC.swift in Sources */,
+				D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */,
 				8403034D27CCF6D6008732F9 /* diningVC.swift in Sources */,
 				AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */,
 				D099666127CACBDF004DCBEA /* marque.swift in Sources */,
