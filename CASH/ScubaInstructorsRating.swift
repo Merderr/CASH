@@ -9,8 +9,8 @@ import UIKit
 
 class ScubaInstructorsRating: UIControl {
 
-    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(.systemRed)
-    let imgEmptyStar = UIImage(systemName: "star")?.withTintColor(.systemRed)
+    let imgFilledStar = UIImage(systemName: "star.fill")
+    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
     
     var rating = 0
     var totalStars = 5
