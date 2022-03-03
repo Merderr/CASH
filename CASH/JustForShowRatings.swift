@@ -76,10 +76,11 @@ private extension JustForShowRatings{
     func handle(with touch: UITouch){
         let cellWidth = self.bounds.size.width / CGFloat(totalStars)
         let location = touch.location(in: self)
-        var value = location.x / cellWidth
+        let value = location.x / cellWidth
         
         updateRating(with: Int(value + 1))
     }
+    
     
     func updateRating(with value: Int){
         

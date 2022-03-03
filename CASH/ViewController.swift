@@ -19,7 +19,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! customCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! customCollectionViewCell
         cell.lb.text = textdata[indexPath.row]
         switch (indexPath.row){
         case 0:
