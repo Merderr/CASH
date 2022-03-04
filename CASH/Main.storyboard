@@ -87,7 +87,7 @@
                                 <color key="shadowColor" systemColor="systemBrownColor"/>
                             </label>
                             <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-ib-B0y">
-                                <rect key="frame" x="-3" y="745" width="420" height="151"/>
+                                <rect key="frame" x="0.0" y="745" width="420" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
