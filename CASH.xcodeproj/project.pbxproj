@@ -36,9 +36,9 @@
 		D09964F127C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
 		D09964F227C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
 		D09964F327C9805D004DCBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964F027C9805D004DCBEA /* Main.storyboard */; };
-		D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099665A27CAB433004DCBEA /* SignInVC.swift */; };
-		D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099665E27CAB486004DCBEA /* SignUpVC.swift */; };
-		D099666127CACBDF004DCBEA /* marque.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099666027CACBDF004DCBEA /* marque.swift */; };
+		D0FBFE4827D2CB0D007F935F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE4727D2CB0D007F935F /* DBHelper.swift */; };
+		D0FBFE4A27D2CB3E007F935F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE4927D2CB3E007F935F /* SignInVC.swift */; };
+		D0FBFE4C27D2CB49007F935F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +88,9 @@
 		D09964DF27C9801B004DCBEA /* CASHUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASHUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D09964EC27C9804E004DCBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CASHUITests/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D09964F027C9805D004DCBEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D099665A27CAB433004DCBEA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = CASHUITests/SignInVC.swift; sourceTree = SOURCE_ROOT; };
-		D099665E27CAB486004DCBEA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		D099666027CACBDF004DCBEA /* marque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marque.swift; sourceTree = "<group>"; };
+		D0FBFE4727D2CB0D007F935F /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		D0FBFE4927D2CB3E007F935F /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +123,7 @@
 			children = (
 				D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */,
 				D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */,
+				D0FBFE4727D2CB0D007F935F /* DBHelper.swift */,
 				D09964B827C9801A004DCBEA /* CASH */,
 				D09964D227C9801B004DCBEA /* CASHTests */,
 				D09964DC27C9801B004DCBEA /* CASHUITests */,
@@ -143,12 +144,12 @@
 		D09964B827C9801A004DCBEA /* CASH */ = {
 			isa = PBXGroup;
 			children = (
-				D099665A27CAB433004DCBEA /* SignInVC.swift */,
 				D09964B927C9801A004DCBEA /* AppDelegate.swift */,
-				D099665E27CAB486004DCBEA /* SignUpVC.swift */,
 				D09964BB27C9801A004DCBEA /* SceneDelegate.swift */,
 				D09964BD27C9801A004DCBEA /* ViewController.swift */,
+				D0FBFE4927D2CB3E007F935F /* SignInVC.swift */,
 				D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */,
+				D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */,
 				D09964CA27C9801B004DCBEA /* Info.plist */,
 				D09964F027C9805D004DCBEA /* Main.storyboard */,
 				8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */,
@@ -158,7 +159,6 @@
 				8403034E27CCF6F2008732F9 /* bedroomVC.swift */,
 				8403034C27CCF6D6008732F9 /* diningVC.swift */,
 				8403034A27CCF6AE008732F9 /* gymVC.swift */,
-				D099666027CACBDF004DCBEA /* marque.swift */,
 				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
 				AC522F9227CE5350001010F1 /* ScubaInstructorsRating.swift */,
 				AC522F9427CE54FC001010F1 /* ScubaEquipmentRating.swift */,
@@ -327,6 +327,8 @@
 				AC522F9D27CE5EDB001010F1 /* JustForShowRatings.swift in Sources */,
 				D09964C427C9801A004DCBEA /* CASH.xcdatamodeld in Sources */,
 				AC522F9727CE5A6D001010F1 /* DiningStaffRating.swift in Sources */,
+				D0FBFE4A27D2CB3E007F935F /* SignInVC.swift in Sources */,
+				D0FBFE4827D2CB0D007F935F /* DBHelper.swift in Sources */,
 				8403035327CCF730008732F9 /* scubaVC.swift in Sources */,
 				8403034F27CCF6F2008732F9 /* bedroomVC.swift in Sources */,
 				84E1215327CDD38700A3A11A /* feedbackVC.swift in Sources */,
@@ -334,17 +336,15 @@
 				D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */,
 				AC522F9327CE5350001010F1 /* ScubaInstructorsRating.swift in Sources */,
 				D07286F227CFDF600053744B /* ClientsData+CoreDataProperties.swift in Sources */,
+				D0FBFE4C27D2CB49007F935F /* SignUpVC.swift in Sources */,
 				D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */,
 				AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */,
 				D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */,
 				8403035127CCF706008732F9 /* spaVC.swift in Sources */,
-				D099665F27CAB486004DCBEA /* SignUpVC.swift in Sources */,
-				D099665B27CAB433004DCBEA /* SignInVC.swift in Sources */,
 				8403034B27CCF6AE008732F9 /* gymVC.swift in Sources */,
 				D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */,
 				8403034D27CCF6D6008732F9 /* diningVC.swift in Sources */,
 				AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */,
-				D099666127CACBDF004DCBEA /* marque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
