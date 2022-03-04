@@ -30,6 +30,10 @@ class SignUpVC: UIViewController {
     @IBAction func signInCompletedAction(_ sender: Any) {
         if password1.text == password2.text && email.text != "" {
             
+            
+            print("Saving data???")
+            DBHelper.inst.addData(n: email.text!, m: password1.text!)
+            
             print("We are good go to feedback")
         }
         else
