@@ -34,6 +34,8 @@ class SignUpVC: UIViewController,WKUIDelegate {
     }
     
     @IBAction func goToSignIn(_ sender: UIButton) {
+    
+        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
         let goToSignIn = storyBoard.instantiateViewController(withIdentifier: "signIn" ) as! SignInVC
         self.present(goToSignIn, animated: true, completion: nil)

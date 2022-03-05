@@ -10,6 +10,7 @@
 import Foundation
 import UIKit
 
+ 
 class CheckBox: UIView {
     
   var isChecked = false
@@ -35,7 +36,9 @@ class CheckBox: UIView {
     override init(frame:CGRect) {
         
         super.init(frame: frame)
-        self.isChecked = true
+      
+            self.isChecked = false
+       
         //backgroundColor = .red
         addSubview(boxView)
         addSubview(imageView)
@@ -59,5 +62,6 @@ class CheckBox: UIView {
     public func toggle() {
         self.isChecked = !isChecked
         imageView.isHidden = !isChecked
+       // ClientSigned = !ClientSigned
     }
 }

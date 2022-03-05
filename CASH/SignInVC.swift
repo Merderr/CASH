@@ -26,7 +26,7 @@ class SignInVC: UIViewController  {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-
+         
         print("init(coder:) has not been implemented")
     }
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class SignInVC: UIViewController  {
         let gesture = UITapGestureRecognizer(target:self,action: #selector(didTapCheckBox))
         checkboxButton.addGestureRecognizer(gesture)
         view.addSubview(checkboxButton)
-      
+       
         let client = DBHelper.inst.getData()
          var E  : [String] = []
           var P  : [String] = []
@@ -77,13 +77,12 @@ class SignInVC: UIViewController  {
     }
     
     @IBAction func goToSignUp(_ sender: UIButton) {
-        
+       
        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
         let goToSignUp = storyBoard.instantiateViewController(withIdentifier: "signUp" ) as! SignUpVC
         self.present(goToSignUp, animated: true, completion: nil)
-        
-        
+      
     }
     
     @IBAction func emailSave(_ sender: Any) {
@@ -91,8 +90,22 @@ class SignInVC: UIViewController  {
         
     }
     @IBAction func signingInAction(_ sender: UIButton) {
-   
-        GOTO()
+        
+         let client = DBHelper.inst.getData()
+          var E  : [String] = []
+           var P  : [String] = []
+         
+        
+         for d in client {
+             if d != nil {
+             E.append(d.email!)
+             P.append(d.password!)
+             
+             }
+         }
+        if P.contains(password.text ?? "this is not possible") && E.contains(email.text ?? "this is a thousand percent chance of ") {
+            GOTO()
+        }
     }
     
     
