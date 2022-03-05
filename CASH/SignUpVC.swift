@@ -45,7 +45,20 @@ class SignUpVC: UIViewController,WKUIDelegate {
     }
     
     @IBAction func signInCompletedAction(_ sender: Any) {
+        var boolISPOSSIBLE = true
+        
+        if password1.text == "" {password1.shake()
+            boolISPOSSIBLE = false
+        }
+        if password2.text == "" {password2.shake()
+            boolISPOSSIBLE = false
+        }
+        if email.text == "" {email.shake()
+            boolISPOSSIBLE = false
+        }
+        if boolISPOSSIBLE {
         if password1.text == password2.text && email.text != "" && password1.text != ""{
+            
             
             
             print("Saving data???")
@@ -54,21 +67,24 @@ class SignUpVC: UIViewController,WKUIDelegate {
             print("We are good go to feedback")
             GOTO()
         }
-        else
-        { if password1.text != password2.text {
+        else if password1.text != password2.text {
             
         
             password1.text = ""
             password2.text = ""
-            
+            password1.shake()
+            password2.shake()
             let alert = UIAlertController(title: "We are Sorry", message: "Your password entries did not Match.", preferredStyle: .alert)
             let ok = UIAlertAction(title: "Okay?", style: .default , handler: {(action)->Void in print("Ok button tapped")})
             alert.addAction(ok)
             self.present(alert, animated:true,completion: nil)
             
         }
+        else if password1.text == password2.text && email.text == "" && password1.text != ""{
+            email.shake()
+            
         }
-         
+        }
     }
     func GOTO() {
         
@@ -78,4 +94,16 @@ class SignUpVC: UIViewController,WKUIDelegate {
          
     }
     
+}
+
+extension UITextField {
+    func shake() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 5
+        animation.autoreverses = true
+        animation.fromValue = CGPoint(x:self.center.x - 4.0, y:self.center.y)
+        animation.toValue = CGPoint(x:self.center.x + 4.0,y: self.center.y)
+        layer.add(animation, forKey: "position")
+    }
 }

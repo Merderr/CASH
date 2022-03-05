@@ -94,8 +94,13 @@ class SignInVC: UIViewController  {
          let client = DBHelper.inst.getData()
           var E  : [String] = []
            var P  : [String] = []
-         
-        
+         var boolISPOSSIBLE = true
+        if email.text == "" {email.shake()
+            boolISPOSSIBLE = false
+        }
+        if password.text == "" {password.shake()
+            boolISPOSSIBLE = false
+        }
          for d in client {
              if d != nil {
              E.append(d.email!)
@@ -103,8 +108,10 @@ class SignInVC: UIViewController  {
              
              }
          }
+        if boolISPOSSIBLE {
         if P.contains(password.text ?? "this is not possible") && E.contains(email.text ?? "this is a thousand percent chance of ") {
             GOTO()
+        }
         }
     }
     
