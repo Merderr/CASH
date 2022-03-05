@@ -112,6 +112,13 @@ class SignInVC: UIViewController  {
         if P.contains(password.text ?? "this is not possible") && E.contains(email.text ?? "this is a thousand percent chance of ") {
             GOTO()
         }
+            else {
+                print("checked records and no sign up with that account")
+                let alert = UIAlertController(title: "We are Sorry", message: "We checked our records and found no client with those Credentials", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "Notification", style: .default , handler: {(action)->Void in print("Ok button tapped")})
+                alert.addAction(ok)
+                self.present(alert, animated:true,completion: nil)
+            }
         }
     }
     
