@@ -39,6 +39,7 @@
 		D0FBFE4827D2CB0D007F935F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE4727D2CB0D007F935F /* DBHelper.swift */; };
 		D0FBFE4A27D2CB3E007F935F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE4927D2CB3E007F935F /* SignInVC.swift */; };
 		D0FBFE4C27D2CB49007F935F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */; };
+		D0FBFE7227D3ADF8007F935F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBFE7127D3ADF8007F935F /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		D0FBFE4727D2CB0D007F935F /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		D0FBFE4927D2CB3E007F935F /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D0FBFE7127D3ADF8007F935F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */,
 				D09964CA27C9801B004DCBEA /* Info.plist */,
 				D09964F027C9805D004DCBEA /* Main.storyboard */,
+				D0FBFE7127D3ADF8007F935F /* CheckBox.swift */,
 				8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */,
 				8403035227CCF730008732F9 /* scubaVC.swift */,
 				8403035027CCF706008732F9 /* spaVC.swift */,
@@ -343,6 +346,7 @@
 				8403035127CCF706008732F9 /* spaVC.swift in Sources */,
 				8403034B27CCF6AE008732F9 /* gymVC.swift in Sources */,
 				D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */,
+				D0FBFE7227D3ADF8007F935F /* CheckBox.swift in Sources */,
 				8403034D27CCF6D6008732F9 /* diningVC.swift in Sources */,
 				AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */,
 			);

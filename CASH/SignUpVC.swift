@@ -6,15 +6,30 @@
 //
 
 import UIKit
+import WebKit
 
-class SignUpVC: UIViewController {
+class SignUpVC: UIViewController,WKUIDelegate {
 
+   
+    
     @IBOutlet var password2: UITextField!
     @IBOutlet var password1: UITextField!
     @IBOutlet var email: UITextField!
+    
+    
+    
+    @IBOutlet weak var TheOtherWK: WKWebView!
+    @IBOutlet weak var OtherUI: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        let html = "<html><body><marquee scrollamount = 13, style='color:rgb(35,255,45);font-family:Sign Painter;font-weight:bold; font-size:300%        '> Special Savings for our Preferred Guests!!..........We Value your opinion as one of our Clients... </marquee></body></html>"
+        OtherUI.loadHTMLString(html, baseURL: nil)
+       
+        TheOtherWK.loadHTMLString(html,baseURL:nil)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -28,13 +43,14 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signInCompletedAction(_ sender: Any) {
-        if password1.text == password2.text && email.text != "" {
+        if password1.text == password2.text && email.text != "" && password1.text != ""{
             
             
             print("Saving data???")
             DBHelper.inst.addData(n: email.text!, m: password1.text!)
             
             print("We are good go to feedback")
+            GOTO()
         }
         else
         { if password1.text != password2.text {
@@ -50,16 +66,14 @@ class SignUpVC: UIViewController {
             
         }
         }
-        //link to feedback page
+         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func GOTO() {
+        
+         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
+         let goToSignUp = storyBoard.instantiateViewController(withIdentifier: "cell" ) as! ViewController
+         self.present(goToSignUp, animated: true, completion: nil)
+         
     }
-    */
-
+    
 }
