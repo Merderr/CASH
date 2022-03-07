@@ -82,7 +82,7 @@ private extension DiningStaffRating{
     }
     
     
-    func updateRating(with value: Int){
+    public func updateRating(with value: Int){
         
         // Make sure the touch was made within the stars rating system.
         if(self.rating != value && value >= 0 && value <= totalStars){

@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var textdata = ["Hotel Suite","Dining Room", "Gym", "Spa Services","Scuba Diving","Overall"]
     var imgdata = ["img0","img1","img2","img3","img4"]
+    var isSelected = false
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -24,7 +25,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.lb.text = textdata[indexPath.row]
         switch (indexPath.row){
         case 0:
-            cell.configure(with: UIImage(named: "img0")!)
+            if (isSelected == true){
+                cell.configure(with: UIImage(named: "img5")!)
+            } else {
+                cell.configure(with: UIImage(named: "img0")!)
+            }
         case 1:
             cell.configure(with: UIImage(named: "img1")!)
         case 2:
@@ -38,16 +43,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         default:
             print("Image not found")
         }
-
         return cell
     }
-    
+    	
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch (indexPath.row) {
         case 0:
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let goToBedroom = storyBoard.instantiateViewController(withIdentifier: "bedroomVC" ) as! bedroomViewController
             self.present(goToBedroom, animated: true, completion: nil)
+            if (isSelected == false){
+                isSelected = true
+            }
+            collectionView.reloadData()
         case 1:
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let goToDining = storyBoard.instantiateViewController(withIdentifier: "diningVC" ) as! diningViewController
@@ -72,6 +80,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             print("oops")
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
