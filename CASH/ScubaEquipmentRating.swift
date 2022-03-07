@@ -9,7 +9,7 @@ import UIKit
 
 class ScubaEquipmentRating: UIControl {
 
-    let imgFilledStar = UIImage(systemName: "star.fill")
+    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
     let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
     
     var rating = 0
@@ -74,7 +74,8 @@ private extension ScubaEquipmentRating{
     func handle(with touch: UITouch){
         let cellWidth = self.bounds.size.width / CGFloat(totalStars)
         let location = touch.location(in: self)
-        var value = location.x / cellWidth
+        let value = location.x / cellWidth
+        
         
         updateRating(with: Int(value + 1))
     }
