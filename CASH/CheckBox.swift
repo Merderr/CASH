@@ -13,11 +13,10 @@ import UIKit
  
 class CheckBox: UIView {
     
-  var isChecked = false
- 
+  var isChecked = true
     let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.isHidden = true
+        imageView.isHidden = false
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .systemBlue
         imageView.image = UIImage(systemName:"checkmark")
@@ -37,7 +36,7 @@ class CheckBox: UIView {
         
         super.init(frame: frame)
       
-            self.isChecked = false
+            self.isChecked = true
        
         //backgroundColor = .red
         addSubview(boxView)
