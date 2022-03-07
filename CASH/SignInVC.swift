@@ -12,7 +12,8 @@ import UIKit
 
 class SignInVC: UIViewController  {
 
-   
+    @IBOutlet weak var loginLabel: UIButton!
+    
     @IBOutlet weak var checkbox: UIButton!
     var Pass : String = ""
     var EM   : String = ""
@@ -33,8 +34,9 @@ class SignInVC: UIViewController  {
         super.viewDidLoad()
         let gesture = UITapGestureRecognizer(target:self,action: #selector(didTapCheckBox))
         checkboxButton.addGestureRecognizer(gesture)
+        checkboxButton.isChecked = true
         view.addSubview(checkboxButton)
-       
+         
         let client = DBHelper.inst.getData()
          var E  : [String] = []
           var P  : [String] = []
@@ -44,17 +46,25 @@ class SignInVC: UIViewController  {
             if d != nil {
             E.append(d.email!)
             P.append(d.password!)
-            
+               
             }
         }
         let num = E.count
         print(E.count)
-        
+        if E.count != 0 {
         print(E[num - 1])
         print(P[num - 1])
         print("Finished to end page")
         Pass = String(P[num - 1])
         EM = String(E[num - 1 ])
+            email.text=EM
+            password.text=Pass
+    }
+        else
+        {Pass = ""
+            EM = ""
+            checkboxButton.toggle()
+        }
         //password.text = Pass
      //   email.text = EM
         

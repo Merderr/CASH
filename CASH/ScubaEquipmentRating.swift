@@ -38,7 +38,7 @@ class ScubaEquipmentRating: UIControl {
             let center = CGPoint(x: value+1, y: rect.size.height/2)
             let frame = CGRect(x: center.x-starSide/2, y: center.y - starSide/2, width: starSide, height: starSide)
             
-            let highlighted = (index+1 <= self.rating)
+            let highlighted = (index+1 <= RatingsState.ratings["ScubaEquipment"]!)
             
             drawStar(with: frame, highlighted: highlighted)
         } // End of loop.
@@ -86,6 +86,7 @@ private extension ScubaEquipmentRating{
         if(self.rating != value && value >= 0 && value <= totalStars){
             self.rating = value
             print(self.rating)
+            RatingsState.ratings["ScubaEquipment"] = self.rating
             setNeedsDisplay()
         }
     }

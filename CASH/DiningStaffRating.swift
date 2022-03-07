@@ -6,15 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
+
+
 
 class DiningStaffRating: UIControl {
     
     let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
     let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.gray)
     
+        var rating: Int = 0
     
-    var rating = 0
-    var totalStars = 5
+        var totalStars = 5
     
     override init(frame: CGRect){
         super.init(frame: frame)
