@@ -16,5 +16,5 @@ class RatingsState{
                     "Food": 0,
                     "DinningRoom": 0
                   ]
-    
+    // Comment
 }
