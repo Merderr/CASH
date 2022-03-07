@@ -12,9 +12,9 @@
         <!--Sign InVC-->
         <scene sceneID="fza-Ul-kZh">
             <objects>
-                <viewController storyboardIdentifier="signIn" id="0l5-k3-C4r" customClass="SignInVC" customModule="CASH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signIn" modalPresentationStyle="fullScreen" id="0l5-k3-C4r" customClass="SignInVC" customModule="CASH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ply-Xi-cfW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1626755846_346965-Centara-Ras-Fushi-Resort-&amp;-Spa-Maldives" translatesAutoresizingMaskIntoConstraints="NO" id="uXA-nI-oTa">
@@ -45,7 +45,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signingInAction:" destination="0l5-k3-C4r" eventType="touchUpInside" id="Kj9-6v-rIZ"/>
-                                    <segue destination="d5g-07-UhW" kind="show" id="6YH-M3-YKU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvK-AI-EQr">
@@ -86,22 +85,13 @@
                                 <color key="highlightedColor" systemColor="systemOrangeColor"/>
                                 <color key="shadowColor" systemColor="systemBrownColor"/>
                             </label>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYP-oP-I3V">
-                                <rect key="frame" x="0.0" y="577" width="414" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyK-K6-YEc">
+                                <rect key="frame" x="102" y="387" width="119" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences" minimumFontSize="90"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-ib-B0y">
-                                <rect key="frame" x="-2" y="713" width="420" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </webView>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s0h-IR-7Gr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,8 +99,7 @@
                     <navigationItem key="navigationItem" id="iQV-GC-1U7"/>
                     <connections>
                         <outlet property="email" destination="hX1-a4-4e3" id="bTp-Kq-5hK"/>
-                        <outlet property="password" destination="ybc-Qf-JgW" id="zi4-uf-iRl"/>
-                        <outlet property="webV" destination="Djg-ib-B0y" id="XUM-ae-aJ4"/>
+                        <outlet property="password" destination="ybc-Qf-JgW" id="RsF-kD-VgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sob-p9-3O9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,11 +109,15 @@
         <!--Sign UpVC-->
         <scene sceneID="RHr-TD-fBG">
             <objects>
-                <viewController storyboardIdentifier="signUp" id="ysf-Sw-ooP" customClass="SignUpVC" customModule="CASH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp" modalPresentationStyle="fullScreen" id="ysf-Sw-ooP" customClass="SignUpVC" customModule="CASH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNu-n6-EkG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z1v-NT-9iL">
+                                <rect key="frame" x="-2" y="-6" width="417" height="908"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CASH Resort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-ww-WEe">
                                 <rect key="frame" x="0.0" y="0.0" width="421" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -135,10 +128,12 @@
                                 <color key="highlightedColor" systemColor="systemOrangeColor"/>
                                 <color key="shadowColor" systemColor="systemBrownColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z1v-NT-9iL">
-                                <rect key="frame" x="-2" y="-6" width="417" height="908"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w1p-kt-UPp">
+                                <rect key="frame" x="-6" y="733" width="420" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE9-JO-6Ia">
                                 <rect key="frame" x="96" y="114" width="223" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -197,15 +192,26 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signInCompletedAction:" destination="ysf-Sw-ooP" eventType="touchUpInside" id="aqs-nx-Z4F"/>
-                                    <segue destination="d5g-07-UhW" kind="show" id="LW5-b8-wa2"/>
                                 </connections>
                             </button>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TPY-Ps-KrT">
+                                <rect key="frame" x="1" y="604" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" minimumFontSize="98"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KoF-wT-LIl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZCM-Km-opu"/>
                     <connections>
+                        <outlet property="OtherUI" destination="w1p-kt-UPp" id="zyV-ja-1Wv"/>
+                        <outlet property="TheOtherWK" destination="TPY-Ps-KrT" id="Ozg-0E-yxg"/>
                         <outlet property="email" destination="DCc-hG-uYX" id="Mu6-iv-l08"/>
                         <outlet property="password1" destination="aG7-0L-4M6" id="AEa-SY-1GT"/>
                         <outlet property="password2" destination="Qe3-iG-v8u" id="GAu-9j-hx2"/>
@@ -213,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77g-UX-Hj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="691" y="224"/>
+            <point key="canvasLocation" x="689.85507246376812" y="223.66071428571428"/>
         </scene>
         <!--Scuba View Controller-->
         <scene sceneID="GFu-FR-pE7">
@@ -384,16 +390,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgX-k2-y87" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2382.608695652174" y="85.714285714285708"/>
-        </scene>
-        <!--cell-->
-        <scene sceneID="ONr-Qp-a13">
-            <objects>
-                <viewControllerPlaceholder referencedIdentifier="cell" id="d5g-07-UhW" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="0Dy-Pq-SXE"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EEj-kU-4R7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1194" y="-11"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ah8-6x-5Dn">
@@ -820,7 +816,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="mbZ-53-eT2"/>
-        <segue reference="6YH-M3-YKU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="0" width="773" height="480"/>

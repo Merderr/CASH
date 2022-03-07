@@ -6,38 +6,45 @@
 //
 
 import UIKit
-import WebKit
+ 
 
 
 
-class SignInVC: UIViewController ,WKUIDelegate {
+class SignInVC: UIViewController  {
 
-    @IBOutlet weak var webV: UIWebView!
-  
+   
     @IBOutlet weak var checkbox: UIButton!
+    var Pass : String = ""
+    var EM   : String = ""
     
-    @IBOutlet weak var WKWebView: WKWebView!
-    @IBOutlet var password: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet var email: UITextField!
+//    var E : [String]
+//    var P : [String]
+    let checkboxButton = CheckBox(frame:CGRect(x:57,y:375,width:40,height:40))
    
     
-    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+         
+        print("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-       // email.text = emailText
-       // password.text = passwordText
-        
+        let gesture = UITapGestureRecognizer(target:self,action: #selector(didTapCheckBox))
+        checkboxButton.addGestureRecognizer(gesture)
+        view.addSubview(checkboxButton)
+       
         let client = DBHelper.inst.getData()
-        var E : [String] = []
-        var P : [String] = []
+         var E  : [String] = []
+          var P  : [String] = []
         
        
         for d in client {
             if d != nil {
             E.append(d.email!)
             P.append(d.password!)
+            
             }
         }
         let num = E.count
@@ -46,24 +53,36 @@ class SignInVC: UIViewController ,WKUIDelegate {
         print(E[num - 1])
         print(P[num - 1])
         print("Finished to end page")
-        password.text = String(P[num - 1])
-        email.text = String(E[num - 1])
+        Pass = String(P[num - 1])
+        EM = String(E[num - 1 ])
+        //password.text = Pass
+     //   email.text = EM
         
-        let html = "<html><body><marquee scrollamount = 13, style='color:rgb(35,255,45);font-family:Sign Painter;font-weight:bold; font-size:300%        '> Special Savings for our Preferred Guests!!..........We Value your opinion as one of our Clients... </marquee></body></html>"
-        webV?.loadHTMLString(html, baseURL: nil)
        
-        WKWebView?.loadHTMLString(html,baseURL:nil)
         
     }
     
+    
+    @objc func didTapCheckBox() {
+        checkboxButton.toggle()
+        if checkboxButton.isChecked == true {
+             
+            password.text = Pass
+            email.text = EM
+        }
+        else{
+            password.text = ""
+            email.text = ""
+        }
+    }
+    
     @IBAction func goToSignUp(_ sender: UIButton) {
-        
+       
        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
         let goToSignUp = storyBoard.instantiateViewController(withIdentifier: "signUp" ) as! SignUpVC
         self.present(goToSignUp, animated: true, completion: nil)
-        
-        
+      
     }
     
     @IBAction func emailSave(_ sender: Any) {
@@ -71,8 +90,45 @@ class SignInVC: UIViewController ,WKUIDelegate {
         
     }
     @IBAction func signingInAction(_ sender: UIButton) {
-   
         
+         let client = DBHelper.inst.getData()
+          var E  : [String] = []
+           var P  : [String] = []
+         var boolISPOSSIBLE = true
+        if email.text == "" {email.shake()
+            boolISPOSSIBLE = false
+        }
+        if password.text == "" {password.shake()
+            boolISPOSSIBLE = false
+        }
+         for d in client {
+             if d != nil {
+             E.append(d.email!)
+             P.append(d.password!)
+             
+             }
+         }
+        if boolISPOSSIBLE {
+        if P.contains(password.text ?? "this is not possible") && E.contains(email.text ?? "this is a thousand percent chance of ") {
+            GOTO()
+        }
+            else {
+                print("checked records and no sign up with that account")
+                let alert = UIAlertController(title: "We are Sorry", message: "We checked our records and found no client with those Credentials", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "Notification", style: .default , handler: {(action)->Void in print("Ok button tapped")})
+                alert.addAction(ok)
+                self.present(alert, animated:true,completion: nil)
+            }
+        }
+    }
+    
+    
+    func GOTO() {
+        
+         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
+         let goToSignUp = storyBoard.instantiateViewController(withIdentifier: "cell" ) as! ViewController
+         self.present(goToSignUp, animated: true, completion: nil)
+         
     }
     /*
     // MARK: - Navigation
