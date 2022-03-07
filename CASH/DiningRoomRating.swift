@@ -10,7 +10,7 @@ import UIKit
 class DiningRoomRating: UIControl {
     
     var imgFilledStar = UIImage(systemName: "star.fill")
-    var imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
+    var imgEmptyStar = UIImage(systemName: "star.fill")
     
     var rating = 0
     var totalStars = 5
@@ -26,8 +26,8 @@ class DiningRoomRating: UIControl {
     override func draw(_ rect: CGRect) {
         
         let context = UIGraphicsGetCurrentContext()
-    //    context!.setFillColor(UIColor.systemBackground.cgColor)
-        context!.setFillColor(red: 0.9, green: 0.1 , blue: 0.2, alpha: 1.0)
+        context!.setFillColor(UIColor.systemOrange.cgColor)
+        //context!.setFillColor(red: 0.9, green: 0.5 , blue: 0.1, alpha: 1.0)
         context!.fill(rect)
         let availWidth = rect.size.width
         let cellWidth = availWidth / CGFloat(totalStars)

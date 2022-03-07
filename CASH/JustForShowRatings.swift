@@ -9,8 +9,8 @@ import UIKit
 
 class JustForShowRatings: UIControl {
     
-    let imgFilledStar = UIImage(systemName: "star.fill")
-    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
+    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
+    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.gray)
     
     var rating = 0
     var totalStars = 5

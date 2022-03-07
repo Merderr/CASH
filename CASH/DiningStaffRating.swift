@@ -9,8 +9,8 @@ import UIKit
 
 class DiningStaffRating: UIControl {
     
-    let imgFilledStar = UIImage(systemName: "star.fill")
-    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
+    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
+    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.gray)
     
     
     var rating = 0
@@ -28,6 +28,7 @@ class DiningStaffRating: UIControl {
         
         let context = UIGraphicsGetCurrentContext()
         context!.setFillColor(UIColor.systemOrange.cgColor)
+        //context!.setFillColor(red: 0.9, green: 0.5 , blue: 0.1, alpha: 1.0)
         context!.fill(rect)
         let availWidth = rect.size.width
         let cellWidth = availWidth / CGFloat(totalStars)

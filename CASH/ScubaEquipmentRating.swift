@@ -9,7 +9,7 @@ import UIKit
 
 class ScubaEquipmentRating: UIControl {
 
-    let imgFilledStar = UIImage(systemName: "star.fill")
+    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
     let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(.systemGray)
     
     var rating = 0
