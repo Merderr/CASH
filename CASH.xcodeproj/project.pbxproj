@@ -20,6 +20,7 @@
 		AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9827CE5B7B001010F1 /* FoodRating.swift */; };
 		AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */; };
 		AC522F9D27CE5EDB001010F1 /* JustForShowRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */; };
+		AC671F0E27D67BA1003B8E08 /* RatingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC671F0D27D67BA1003B8E08 /* RatingsState.swift */; };
 		D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */; };
 		D07286F227CFDF600053744B /* ClientsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */; };
 		D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964B927C9801A004DCBEA /* AppDelegate.swift */; };
@@ -73,6 +74,7 @@
 		AC522F9827CE5B7B001010F1 /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
 		AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningRoomRating.swift; sourceTree = "<group>"; };
 		AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustForShowRatings.swift; sourceTree = "<group>"; };
+		AC671F0D27D67BA1003B8E08 /* RatingsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsState.swift; sourceTree = "<group>"; };
 		D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D09964B627C9801A004DCBEA /* CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 				AC522F9C27CE5EDB001010F1 /* JustForShowRatings.swift */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
+				AC671F0D27D67BA1003B8E08 /* RatingsState.swift */,
 			);
 			path = CASH;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */,
 				D0FBFE7227D3ADF8007F935F /* CheckBox.swift in Sources */,
 				8403034D27CCF6D6008732F9 /* diningVC.swift in Sources */,
+				AC671F0E27D67BA1003B8E08 /* RatingsState.swift in Sources */,
 				AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
