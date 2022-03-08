@@ -8,21 +8,27 @@ import UIKit
 
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    //Create arrays for naming for labels and images
     var textdata = ["Hotel Suite","Dining Room", "Gym", "Spa Services","Scuba Diving","Overall"]
-    var imgdata = ["img0","img1","img2","img3","img4"]
+    var imgdata = ["img0","img1","img2","img3","img4","img5"]
     
-    
+    //Creates number of sections
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
+    //Creates number of cells for the Collection View
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return textdata.count
     }
     
+    //Creates cell with label and image
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! customCollectionViewCell
+        //Pull data from text array and assigns the label for each cell based on position
         cell.lb.text = textdata[indexPath.row]
+        //Pulls data from img array and assigns a picture to each cell based on position
+        //Adds check to see if cell was clicked on and changes text label
         switch (indexPath.row){
         case 0:
             if (roomVisited.roomV[0]){
@@ -61,6 +67,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     	
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //When user clicks on a cell, it directs to the specific viewcontroller and changes the state for roomVisited to change the value to true so that the label color changes
         switch (indexPath.row) {
         case 0:
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
@@ -92,20 +99,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let goToFeedback = storyBoard.instantiateViewController(withIdentifier: "feedbackVC" ) as! feedbackViewController
             self.present(goToFeedback, animated: true, completion: nil)
             roomVisited.roomV[5] = true
-
-            
         default:
-            print("oops")
+            print("Invalid clicks")
         }
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
-    
 
 }
 
