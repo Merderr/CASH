@@ -14,7 +14,13 @@ class RatingsState{
                     "ScubaEquipment": 0,
                     "DinningStaff": 0,
                     "Food": 0,
-                    "DinningRoom": 0
+                    "DinningRoom": 0,
+                    "Bedroom": 0,
+                    "Bathroom": 0,
+                    "View": 0,
+                    "Gym": 0,
+                    "GymStaff": 0,
+                    "Overall": 0
                   ]
     // Comment
 }

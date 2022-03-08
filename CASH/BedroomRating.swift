@@ -1,15 +1,15 @@
 //
-//  JustForShowRatings.swift
+//  BedroomRating.swift
 //  CASH
 //
-//  Created by costin popescu on 3/1/22.
+//  Created by costin popescu on 3/7/22.
 //
 
 import UIKit
 
-class JustForShowRatings: UIControl {
+class BedroomRating: UIControl {
     
-    let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
+    let imgFilledStar = UIImage(systemName :"star.fill")?.withTintColor(UIColor.yellow)
     let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.gray)
     
     var rating = 0
@@ -27,6 +27,7 @@ class JustForShowRatings: UIControl {
         
         let context = UIGraphicsGetCurrentContext()
         context!.setFillColor(UIColor.systemOrange.cgColor)
+        //context!.setFillColor(red: 0.9, green: 0.5 , blue: 0.1, alpha: 1.0)
         context!.fill(rect)
         let availWidth = rect.size.width
         let cellWidth = availWidth / CGFloat(totalStars)
@@ -38,7 +39,7 @@ class JustForShowRatings: UIControl {
             let center = CGPoint(x: value+1, y: rect.size.height/2)
             let frame = CGRect(x: center.x-starSide/2, y: center.y - starSide/2, width: starSide, height: starSide)
             
-            let highlighted = (index+1 <= self.rating)
+            let highlighted = (index+1 <= RatingsState.ratings["Bedroom"]!)
             
             drawStar(with: frame, highlighted: highlighted)
         } // End of loop.
@@ -58,10 +59,9 @@ class JustForShowRatings: UIControl {
         return true
     }
     
-// 
 }
 
-private extension JustForShowRatings{
+private extension BedroomRating{
     
     func drawStar(with frame: CGRect, highlighted: Bool){
         
@@ -88,6 +88,7 @@ private extension JustForShowRatings{
         if(self.rating != value && value >= 0 && value <= totalStars){
             self.rating = value
             print(self.rating)
+            RatingsState.ratings["Bedroom"] = self.rating
             setNeedsDisplay()
         }
     }

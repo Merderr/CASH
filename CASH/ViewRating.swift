@@ -1,16 +1,16 @@
 //
-//  DiningRoomRating.swift
+//  ViewRating.swift
 //  CASH
 //
-//  Created by costin popescu on 3/1/22.
+//  Created by costin popescu on 3/7/22.
 //
 
 import UIKit
 
-class DiningRoomRating: UIControl {
+class ViewRating: UIControl {
     
-    var imgFilledStar = UIImage(systemName: "star.fill")
-    var imgEmptyStar = UIImage(systemName: "star.fill")
+    let imgFilledStar = UIImage(systemName :"star.fill")?.withTintColor(UIColor.yellow)
+    let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.gray)
     
     var rating = 0
     var totalStars = 5
@@ -39,9 +39,10 @@ class DiningRoomRating: UIControl {
             let center = CGPoint(x: value+1, y: rect.size.height/2)
             let frame = CGRect(x: center.x-starSide/2, y: center.y - starSide/2, width: starSide, height: starSide)
             
-            let highlighted = (index+1 <= RatingsState.ratings["DinningRoom"]!)
+            let highlighted = (index+1 <= RatingsState.ratings["View"]!)
             
             drawStar(with: frame, highlighted: highlighted)
+
         } // End of loop.
         
     } // End of draw()
@@ -58,23 +59,19 @@ class DiningRoomRating: UIControl {
         handle(with: touch)
         return true
     }
+    
 }
 
-private extension DiningRoomRating{
+private extension ViewRating{
     
     func drawStar(with frame: CGRect, highlighted: Bool){
         
-      
-        imgFilledStar = imgFilledStar?.withTintColor(UIColor.yellow)
-        imgEmptyStar = imgEmptyStar?.withTintColor(UIColor.gray)
         let image = highlighted ? imgFilledStar : imgEmptyStar
         draw(with: image!, and: frame)
-        
     }
     
     func draw(with image:UIImage, and frame:CGRect){
         image.draw(in: frame)
-        
     }
     // Handle the event listener.
     func handle(with touch: UITouch){
@@ -85,12 +82,14 @@ private extension DiningRoomRating{
         updateRating(with: Int(value + 1))
     }
     
+    
     func updateRating(with value: Int){
+        
         // Make sure the touch was made within the stars rating system.
         if(self.rating != value && value >= 0 && value <= totalStars){
             self.rating = value
             print(self.rating)
-            RatingsState.ratings["DinningRoom"] = self.rating
+            RatingsState.ratings["View"] = self.rating
             setNeedsDisplay()
         }
     }

@@ -43,7 +43,7 @@ class DiningStaffRating: UIControl {
             let center = CGPoint(x: value+1, y: rect.size.height/2)
             let frame = CGRect(x: center.x-starSide/2, y: center.y - starSide/2, width: starSide, height: starSide)
             
-            let highlighted = (index+1 <= self.rating)
+            let highlighted = (index+1 <= RatingsState.ratings["DinningStaff"]!)
             
             drawStar(with: frame, highlighted: highlighted)
         } // End of loop.
@@ -85,12 +85,12 @@ private extension DiningStaffRating{
     }
     
     
-    public func updateRating(with value: Int){
-        
+    func updateRating(with value: Int){
         // Make sure the touch was made within the stars rating system.
         if(self.rating != value && value >= 0 && value <= totalStars){
             self.rating = value
             print(self.rating)
+            RatingsState.ratings["DinningStaff"] = self.rating
             setNeedsDisplay()
         }
     }
