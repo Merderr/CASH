@@ -1,6 +1,6 @@
 //
 //  SpaStaffRating.swift
-//  Spa
+//  CASH
 //
 //  Created by costin popescu on 3/8/22.
 //

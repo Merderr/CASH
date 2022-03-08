@@ -1,6 +1,6 @@
 //
 //  MassageRating.swift
-//  Spa
+//  CASH
 //
 //  Created by costin popescu on 3/8/22.
 //
@@ -58,6 +58,7 @@ class MassageRating: UIControl {
         return true
     }
     
+//
 }
 
 private extension MassageRating{
@@ -93,3 +94,4 @@ private extension MassageRating{
     }
     
 }
+

@@ -1,13 +1,13 @@
 //
-//  SpaServiceRating.swift
-//  Spa
+//  SpaServicesRating.swift
+//  CASH
 //
 //  Created by costin popescu on 3/8/22.
 //
 
 import UIKit
 
-class SpaServiceRating: UIControl {
+class SpaServicesRating: UIControl {
     
     let imgFilledStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.yellow)
     let imgEmptyStar = UIImage(systemName: "star.fill")?.withTintColor(UIColor.gray)
@@ -41,8 +41,6 @@ class SpaServiceRating: UIControl {
             let highlighted = (index+1 <= RatingsState.ratings["SpaServices"]!)
             
             drawStar(with: frame, highlighted: highlighted)
-            
-        
         } // End of loop.
         
     } // End of draw()
@@ -63,8 +61,7 @@ class SpaServiceRating: UIControl {
 //
 }
 
-private extension SpaServiceRating{
-    
+private extension SpaServicesRating{
     
     func drawStar(with frame: CGRect, highlighted: Bool){
         
@@ -97,3 +94,4 @@ private extension SpaServiceRating{
     }
     
 }
+

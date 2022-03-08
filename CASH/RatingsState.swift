@@ -3,7 +3,7 @@
 //  CASH
 //
 //  Created by costin popescu on 3/7/22.
-//test
+//
 
 import Foundation
 
@@ -24,6 +24,7 @@ class RatingsState{
                     "SpaStaff":0,
                     "Massage":0,
                     "SpaServices": 0
-                    ]
-    // Comment 1
+                  ]
+    // Comment
 }
+

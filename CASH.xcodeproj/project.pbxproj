@@ -188,18 +188,18 @@
 				AC522F9427CE54FC001010F1 /* ScubaEquipmentRating.swift */,
 				AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */,
 				AC522F9827CE5B7B001010F1 /* FoodRating.swift */,
-				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
 				AC671F0D27D67BA1003B8E08 /* RatingsState.swift */,
-				842238EB27D7CA7C005647B3 /* SpaServiceRating.swift */,
-				842238ED27D7CA96005647B3 /* SpaStaffRating.swift */,
-				842238EF27D7CAB0005647B3 /* MassageRating.swift */,
+				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 				AC207AF627D71DE7003F4E6E /* BedroomRating.swift */,
 				AC207AF827D72051003F4E6E /* BathroomRating.swift */,
 				AC207AFC27D721B9003F4E6E /* ViewRating.swift */,
 				AC207AFE27D722EA003F4E6E /* GymRating.swift */,
 				AC207B0027D72440003F4E6E /* GymStaffRating.swift */,
 				AC207B0227D72761003F4E6E /* OverallRating.swift */,
+				842238EF27D7CAB0005647B3 /* MassageRating.swift */,
+				842238ED27D7CA96005647B3 /* SpaStaffRating.swift */,
+				842238EB27D7CA7C005647B3 /* SpaServiceRating.swift */,
 			);
 			path = CASH;
 			sourceTree = "<group>";
