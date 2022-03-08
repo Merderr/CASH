@@ -100,7 +100,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(goToFeedback, animated: true, completion: nil)
             roomVisited.roomV[5] = true
         default:
-            print("Invalid clicks")
+            print("Invalid click")
         }
     }
     

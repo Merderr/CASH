@@ -15,6 +15,9 @@
 		8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */; };
 		84A0C95927D6BA3200086D6B /* roomVisited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0C95827D6BA3200086D6B /* roomVisited.swift */; };
 		84E1215327CDD38700A3A11A /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1215227CDD38700A3A11A /* feedbackVC.swift */; };
+		84E1831127D7C4F600C88145 /* SpaServiceRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1831027D7C4F600C88145 /* SpaServiceRating.swift */; };
+		84E1831327D7C50E00C88145 /* SpaStaffRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1831227D7C50E00C88145 /* SpaStaffRating.swift */; };
+		84E1831527D7C52800C88145 /* MassageRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1831427D7C52800C88145 /* MassageRating.swift */; };
 		AC207AF727D71DE7003F4E6E /* BedroomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC207AF627D71DE7003F4E6E /* BedroomRating.swift */; };
 		AC207AF927D72051003F4E6E /* BathroomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC207AF827D72051003F4E6E /* BathroomRating.swift */; };
 		AC207AFD27D721B9003F4E6E /* ViewRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC207AFC27D721B9003F4E6E /* ViewRating.swift */; };
@@ -75,6 +78,9 @@
 		8403035627CCFCE6008732F9 /* customCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCollectionViewCell.swift; sourceTree = "<group>"; };
 		84A0C95827D6BA3200086D6B /* roomVisited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomVisited.swift; sourceTree = "<group>"; };
 		84E1215227CDD38700A3A11A /* feedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
+		84E1831027D7C4F600C88145 /* SpaServiceRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaServiceRating.swift; sourceTree = "<group>"; };
+		84E1831227D7C50E00C88145 /* SpaStaffRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaStaffRating.swift; sourceTree = "<group>"; };
+		84E1831427D7C52800C88145 /* MassageRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageRating.swift; sourceTree = "<group>"; };
 		AC207AF627D71DE7003F4E6E /* BedroomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomRating.swift; sourceTree = "<group>"; };
 		AC207AF827D72051003F4E6E /* BathroomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomRating.swift; sourceTree = "<group>"; };
 		AC207AFC27D721B9003F4E6E /* ViewRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRating.swift; sourceTree = "<group>"; };
@@ -185,6 +191,9 @@
 				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
 				AC671F0D27D67BA1003B8E08 /* RatingsState.swift */,
+				84E1831027D7C4F600C88145 /* SpaServiceRating.swift */,
+				84E1831227D7C50E00C88145 /* SpaStaffRating.swift */,
+				84E1831427D7C52800C88145 /* MassageRating.swift */,
 				AC207AF627D71DE7003F4E6E /* BedroomRating.swift */,
 				AC207AF827D72051003F4E6E /* BathroomRating.swift */,
 				AC207AFC27D721B9003F4E6E /* ViewRating.swift */,
@@ -347,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E1831527D7C52800C88145 /* MassageRating.swift in Sources */,
 				AC522F9527CE54FC001010F1 /* ScubaEquipmentRating.swift in Sources */,
 				D09964C427C9801A004DCBEA /* CASH.xcdatamodeld in Sources */,
 				AC207AFD27D721B9003F4E6E /* ViewRating.swift in Sources */,
@@ -359,7 +369,9 @@
 				8403035727CCFCE6008732F9 /* customCollectionViewCell.swift in Sources */,
 				AC207AFF27D722EA003F4E6E /* GymRating.swift in Sources */,
 				D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */,
+				84E1831327D7C50E00C88145 /* SpaStaffRating.swift in Sources */,
 				84A0C95927D6BA3200086D6B /* roomVisited.swift in Sources */,
+				84E1831127D7C4F600C88145 /* SpaServiceRating.swift in Sources */,
 				AC522F9327CE5350001010F1 /* ScubaInstructorsRating.swift in Sources */,
 				AC207B0327D72761003F4E6E /* OverallRating.swift in Sources */,
 				D07286F227CFDF600053744B /* ClientsData+CoreDataProperties.swift in Sources */,
