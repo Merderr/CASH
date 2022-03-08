@@ -134,12 +134,114 @@ class SignInVC: UIViewController  {
     
     
     func GOTO() {
-        
+        keyChain()
          let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
          let goToSignUp = storyBoard.instantiateViewController(withIdentifier: "cell" ) as! ViewController
          self.present(goToSignUp, animated: true, completion: nil)
          
     }
+    
+    
+    
+    func keyChain(){
+        // named function arriving from GOTO to show password with
+        //proper keychain function
+        SaveData()
+            // saving password and id to keyChain
+    }
+    
+    
+    func SaveData() {
+        // still keychain subroutines
+        // this again is from original GOTO function
+        // which saved everything in core data
+        // a method under keychain saving of password
+        
+        
+        
+        
+        
+        let PP = password.text
+        let UU = email.text
+        // if values are here they have already been checked for non nil
+        if PP == nil || UU == nil {return}
+       //set Attributes
+       let att : [String : Any] = [kSecClass as String: kSecClassGenericPassword,
+                                   kSecAttrAccount as String : UU!,
+                                   kSecValueData as String : PP!.data(using: .utf8)!
+       ]
+       
+       // added data correctly check
+       
+       if SecItemAdd(att as CFDictionary, nil) == noErr {
+           print("data saved successfully")
+       }
+       else {
+           print("UserName Taken")
+       }
+       
+       
+   }
+    
+    
+    
+    func getData() {
+        
+        //set Query
+        // Error checked leftand right function is here through GOTO fucntion
+        // This is just a helper routine to show saving with Keychain
+        // It is not called direcly
+        // to use it needs just username (email.text outlet)
+        // of last login save which is a keychain to the password
+        
+        
+        //note forced unwraps are safe as this function can be called only // after GOTO which is a firm saved tested
+        let q : [String :Any] = [kSecClass as String :  kSecClassGenericPassword,
+                                 kSecAttrAccount as String: email.text!,
+                                 kSecReturnAttributes as String : true,
+                                 kSecReturnData as String : true]
+        
+        var res : CFTypeRef?
+        
+       if SecItemCopyMatching(q as CFDictionary, &res) == noErr {
+           
+           if let item = res as? [String : Any],
+            let uid = item[kSecAttrAccount as String] as? String,
+            let passwordK = item [ kSecValueData as String] as? Data,
+            let passWord = String(data : passwordK, encoding: .utf8)
+            
+           { password.text = passWord
+               email.text = email.text
+               //this function can get email from core data which can
+               // hold this data
+               
+//                print("id is \(uid) and the password is \(passWord) .uid== \(uid)   .passw= \(password)")
+//
+//               for (Kind,Mum) in item {print(Kind,Mum)
+//
+//               }
+            }
+            else {
+                print("no data found")
+            }
+        }
+        
+    }//
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
