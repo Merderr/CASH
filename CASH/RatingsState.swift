@@ -21,9 +21,6 @@ class RatingsState{
                     "Gym": 0,
                     "GymStaff": 0,
                     "Overall": 0,
-                    "SpaStaff":0,
-                    "Massage":0,
-                    "SpaServices": 0
                     ]
     // Comment 1
 }
