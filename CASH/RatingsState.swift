@@ -25,5 +25,5 @@ class RatingsState{
                     "Massage":0,
                     "SpaServices": 0
                     ]
-    // Comment
+    // Comment 1
 }

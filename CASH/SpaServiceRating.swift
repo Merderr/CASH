@@ -60,7 +60,7 @@ class SpaServiceRating: UIControl {
         return true
     }
     
-//
+// test
 }
 
 private extension SpaServiceRating{
