@@ -92,4 +92,4 @@ private extension ScubaEquipmentRating{
     }
     
 }
-
+// 
