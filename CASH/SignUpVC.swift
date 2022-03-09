@@ -16,8 +16,6 @@ class SignUpVC: UIViewController,WKUIDelegate {
     @IBOutlet var password1: UITextField!
     @IBOutlet var email: UITextField!
     
-    
-    
     @IBOutlet weak var TheOtherWK: WKWebView!
     @IBOutlet weak var OtherUI: UIWebView!
     
@@ -25,7 +23,7 @@ class SignUpVC: UIViewController,WKUIDelegate {
         super.viewDidLoad()
 
         
-        let html = "<html><body><marquee scrollamount = 13, style='color:rgb(35,255,45);font-family:Sign Painter;font-weight:bold; font-size:300%        '> Special Savings for our Preferred Guests!!..........We Value your opinion as one of our Clients... </marquee></body></html>"
+        let html = "<html><body><marquee scrollamount = 13, style='color:rgb(255,200,0);font-family:Sign Painter;font-weight:bold; font-size:300%        '> Special Savings for our Preferred Guests!!..........We Value your opinion as one of our Clients... </marquee></body></html>"
         OtherUI.loadHTMLString(html, baseURL: nil)
        
         TheOtherWK.loadHTMLString(html,baseURL:nil)
