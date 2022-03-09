@@ -25,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     //Creates cell with label and image
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! customCollectionViewCell
-        //Pull data from text array and assigns the label for each cell based on position
+        //Pulls data from text array and assigns the label for each cell based on position
         cell.lb.text = textdata[indexPath.row]
         //Pulls data from img array and assigns a picture to each cell based on position
         //Adds check to see if cell was clicked on and changes text label

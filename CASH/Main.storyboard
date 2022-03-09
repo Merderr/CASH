@@ -275,6 +275,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16A72C80-044D-4FF3-9E8E-BB35D2D70A00" translatesAutoresizingMaskIntoConstraints="NO" id="SR8-C7-C1O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMb-cC-uBi">
                                 <rect key="frame" x="96" y="114" width="223" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -462,6 +466,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3917605D-E472-4AFC-88E5-68D4E8D4BA06" translatesAutoresizingMaskIntoConstraints="NO" id="hsv-vR-4NT">
+                                <rect key="frame" x="-35" y="558" width="462" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rxe-bI-Tq4"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -674,6 +682,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="25A242FA-2215-4564-B099-54B3A471B4B1" translatesAutoresizingMaskIntoConstraints="NO" id="ero-Kz-TP7">
+                                <rect key="frame" x="0.0" y="558" width="414" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fWL-0N-JSe"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -788,6 +800,10 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="systemBrownColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FC6DB2F5-A67C-4D06-AEA6-9B392C5FE01A" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-mO-t3x">
+                                <rect key="frame" x="-5" y="558" width="419" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cit-kY-ey0"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -881,6 +897,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8DD3F34D-89C8-4E26-9357-A75B822F91FA_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="1nZ-9B-RBx">
+                                <rect key="frame" x="-17" y="438" width="431" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5T1-B4-gte"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -898,6 +918,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jewels-of-the-indian-ocean-maldives-colombo-500x500" translatesAutoresizingMaskIntoConstraints="NO" id="5BQ-ue-Zgf">
+                                <rect key="frame" x="0.0" y="328" width="421" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CASH Resort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pA-HR-7kE">
                                 <rect key="frame" x="0.0" y="0.0" width="421" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -939,19 +963,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-1P-CKg">
-                                <rect key="frame" x="49" y="632" width="323" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Exit to Sign up" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="0l5-k3-C4r" kind="show" id="AbA-qr-hm5"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7H-AQ-ZIq">
                                 <rect key="frame" x="25" y="200" width="400" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -967,6 +978,19 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-1P-CKg">
+                                <rect key="frame" x="49" y="687" width="323" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Exit to Sign up" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0l5-k3-C4r" kind="show" id="AbA-qr-hm5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BRN-hb-jaY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -978,12 +1002,18 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KrL-AI-L1M"/>
+        <segue reference="dkn-5A-bzf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="0" width="773" height="480"/>
         <image name="1626755846_346965-Centara-Ras-Fushi-Resort-&amp;-Spa-Maldives" width="1280" height="751"/>
+        <image name="16A72C80-044D-4FF3-9E8E-BB35D2D70A00" width="900" height="600"/>
+        <image name="25A242FA-2215-4564-B099-54B3A471B4B1" width="650" height="366"/>
+        <image name="3917605D-E472-4AFC-88E5-68D4E8D4BA06" width="1911" height="1274"/>
+        <image name="8DD3F34D-89C8-4E26-9357-A75B822F91FA_1_105_c" width="1059" height="741"/>
+        <image name="FC6DB2F5-A67C-4D06-AEA6-9B392C5FE01A" width="1182" height="887"/>
         <image name="colombo-maldivas" width="1140" height="800"/>
+        <image name="jewels-of-the-indian-ocean-maldives-colombo-500x500" width="500" height="375"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

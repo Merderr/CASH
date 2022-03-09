@@ -17,6 +17,7 @@
 		842238F027D7CAB0005647B3 /* MassageRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842238EF27D7CAB0005647B3 /* MassageRating.swift */; };
 		849E456027D7D5E0009CD0AE /* scubaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E455F27D7D5E0009CD0AE /* scubaVC.swift */; };
 		84A0C95927D6BA3200086D6B /* roomVisited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0C95827D6BA3200086D6B /* roomVisited.swift */; };
+		84D3509F27D90A0F002C8CDF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D3509E27D90A0F002C8CDF /* Launch Screen.storyboard */; };
 		84E1215327CDD38700A3A11A /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1215227CDD38700A3A11A /* feedbackVC.swift */; };
 		AC207AF727D71DE7003F4E6E /* BedroomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC207AF627D71DE7003F4E6E /* BedroomRating.swift */; };
 		AC207AF927D72051003F4E6E /* BathroomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC207AF827D72051003F4E6E /* BathroomRating.swift */; };
@@ -36,7 +37,6 @@
 		D09964BC27C9801A004DCBEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BB27C9801A004DCBEA /* SceneDelegate.swift */; };
 		D09964BE27C9801A004DCBEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964BD27C9801A004DCBEA /* ViewController.swift */; };
 		D09964C427C9801A004DCBEA /* CASH.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */; };
-		D09964C927C9801B004DCBEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */; };
 		D09964D427C9801B004DCBEA /* CASHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964D327C9801B004DCBEA /* CASHTests.swift */; };
 		D09964DE27C9801B004DCBEA /* CASHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964DD27C9801B004DCBEA /* CASHUITests.swift */; };
 		D09964E027C9801B004DCBEA /* CASHUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964DF27C9801B004DCBEA /* CASHUITestsLaunchTests.swift */; };
@@ -80,6 +80,7 @@
 		842238EF27D7CAB0005647B3 /* MassageRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageRating.swift; sourceTree = "<group>"; };
 		849E455F27D7D5E0009CD0AE /* scubaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = scubaVC.swift; path = ../../../.Trash/scubaVC.swift; sourceTree = "<group>"; };
 		84A0C95827D6BA3200086D6B /* roomVisited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomVisited.swift; sourceTree = "<group>"; };
+		84D3509E27D90A0F002C8CDF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		84E1215227CDD38700A3A11A /* feedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
 		AC207AF627D71DE7003F4E6E /* BedroomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomRating.swift; sourceTree = "<group>"; };
 		AC207AF827D72051003F4E6E /* BathroomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomRating.swift; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		D09964BB27C9801A004DCBEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D09964BD27C9801A004DCBEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D09964C327C9801A004DCBEA /* CASH.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CASH.xcdatamodel; sourceTree = "<group>"; };
-		D09964C827C9801B004DCBEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D09964CA27C9801B004DCBEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09964CF27C9801B004DCBEA /* CASHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CASHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09964D327C9801B004DCBEA /* CASHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASHTests.swift; sourceTree = "<group>"; };
@@ -168,10 +168,10 @@
 			children = (
 				D09964B927C9801A004DCBEA /* AppDelegate.swift */,
 				D09964BB27C9801A004DCBEA /* SceneDelegate.swift */,
+				84D3509E27D90A0F002C8CDF /* Launch Screen.storyboard */,
 				D09964BD27C9801A004DCBEA /* ViewController.swift */,
 				84A0C95827D6BA3200086D6B /* roomVisited.swift */,
 				D0FBFE4927D2CB3E007F935F /* SignInVC.swift */,
-				D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */,
 				D0FBFE4B27D2CB49007F935F /* SignUpVC.swift */,
 				D09964CA27C9801B004DCBEA /* Info.plist */,
 				D09964F027C9805D004DCBEA /* Main.storyboard */,
@@ -325,9 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D3509F27D90A0F002C8CDF /* Launch Screen.storyboard in Resources */,
 				D09964F127C9805D004DCBEA /* Main.storyboard in Resources */,
 				D09964ED27C9804E004DCBEA /* Assets.xcassets in Resources */,
-				D09964C927C9801B004DCBEA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,17 +423,6 @@
 			targetProxy = D09964DA27C9801B004DCBEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D09964C727C9801B004DCBEA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D09964C827C9801B004DCBEA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D09964E127C9801B004DCBEA /* Debug */ = {
