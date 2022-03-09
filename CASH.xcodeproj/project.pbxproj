@@ -15,7 +15,6 @@
 		842238EC27D7CA7C005647B3 /* SpaServiceRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842238EB27D7CA7C005647B3 /* SpaServiceRating.swift */; };
 		842238EE27D7CA96005647B3 /* SpaStaffRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842238ED27D7CA96005647B3 /* SpaStaffRating.swift */; };
 		842238F027D7CAB0005647B3 /* MassageRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842238EF27D7CAB0005647B3 /* MassageRating.swift */; };
-		849E456027D7D5E0009CD0AE /* scubaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E455F27D7D5E0009CD0AE /* scubaVC.swift */; };
 		84A0C95927D6BA3200086D6B /* roomVisited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0C95827D6BA3200086D6B /* roomVisited.swift */; };
 		84D3509F27D90A0F002C8CDF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D3509E27D90A0F002C8CDF /* Launch Screen.storyboard */; };
 		84E1215327CDD38700A3A11A /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1215227CDD38700A3A11A /* feedbackVC.swift */; };
@@ -31,6 +30,7 @@
 		AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9827CE5B7B001010F1 /* FoodRating.swift */; };
 		AC522F9B27CE5D89001010F1 /* DiningRoomRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */; };
 		AC671F0E27D67BA1003B8E08 /* RatingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC671F0D27D67BA1003B8E08 /* RatingsState.swift */; };
+		ACF3A76727D91E2F003AD361 /* scubaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3A76627D91E2F003AD361 /* scubaVC.swift */; };
 		D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */; };
 		D07286F227CFDF600053744B /* ClientsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */; };
 		D09964BA27C9801A004DCBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09964B927C9801A004DCBEA /* AppDelegate.swift */; };
@@ -78,7 +78,6 @@
 		842238EB27D7CA7C005647B3 /* SpaServiceRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaServiceRating.swift; sourceTree = "<group>"; };
 		842238ED27D7CA96005647B3 /* SpaStaffRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaStaffRating.swift; sourceTree = "<group>"; };
 		842238EF27D7CAB0005647B3 /* MassageRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageRating.swift; sourceTree = "<group>"; };
-		849E455F27D7D5E0009CD0AE /* scubaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = scubaVC.swift; path = ../../../.Trash/scubaVC.swift; sourceTree = "<group>"; };
 		84A0C95827D6BA3200086D6B /* roomVisited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomVisited.swift; sourceTree = "<group>"; };
 		84D3509E27D90A0F002C8CDF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		84E1215227CDD38700A3A11A /* feedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		AC522F9827CE5B7B001010F1 /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
 		AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningRoomRating.swift; sourceTree = "<group>"; };
 		AC671F0D27D67BA1003B8E08 /* RatingsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsState.swift; sourceTree = "<group>"; };
+		ACF3A76627D91E2F003AD361 /* scubaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scubaVC.swift; sourceTree = "<group>"; };
 		D07286EF27CFDF600053744B /* ClientsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D07286F027CFDF600053744B /* ClientsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D09964B627C9801A004DCBEA /* CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +180,7 @@
 				8403035027CCF706008732F9 /* spaVC.swift */,
 				84E1215227CDD38700A3A11A /* feedbackVC.swift */,
 				8403034E27CCF6F2008732F9 /* bedroomVC.swift */,
+				ACF3A76627D91E2F003AD361 /* scubaVC.swift */,
 				8403034C27CCF6D6008732F9 /* diningVC.swift */,
 				8403034A27CCF6AE008732F9 /* gymVC.swift */,
 				D09964EC27C9804E004DCBEA /* Assets.xcassets */,
@@ -188,7 +189,6 @@
 				AC522F9627CE5A6D001010F1 /* DiningStaffRating.swift */,
 				AC522F9827CE5B7B001010F1 /* FoodRating.swift */,
 				D09964C227C9801A004DCBEA /* CASH.xcdatamodeld */,
-				849E455F27D7D5E0009CD0AE /* scubaVC.swift */,
 				AC671F0D27D67BA1003B8E08 /* RatingsState.swift */,
 				AC522F9A27CE5D89001010F1 /* DiningRoomRating.swift */,
 				AC207AF627D71DE7003F4E6E /* BedroomRating.swift */,
@@ -384,7 +384,7 @@
 				8403034B27CCF6AE008732F9 /* gymVC.swift in Sources */,
 				D07286F127CFDF600053744B /* ClientsData+CoreDataClass.swift in Sources */,
 				D0FBFE7227D3ADF8007F935F /* CheckBox.swift in Sources */,
-				849E456027D7D5E0009CD0AE /* scubaVC.swift in Sources */,
+				ACF3A76727D91E2F003AD361 /* scubaVC.swift in Sources */,
 				8403034D27CCF6D6008732F9 /* diningVC.swift in Sources */,
 				AC671F0E27D67BA1003B8E08 /* RatingsState.swift in Sources */,
 				AC522F9927CE5B7B001010F1 /* FoodRating.swift in Sources */,

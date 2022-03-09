@@ -92,6 +92,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 4:
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
             let goToScuba = storyBoard.instantiateViewController(withIdentifier: "scubaVC" ) as! scubaViewController
+            
+
             self.present(goToScuba, animated: true, completion: nil)
             roomVisited.roomV[4] = true
         case 5:
