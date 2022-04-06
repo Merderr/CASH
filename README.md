@@ -1,2 +1,2 @@
-# CASH
-Revature Project CASH Resort Feedback App
+# CASH Resort Feedback App
+Revature Project
